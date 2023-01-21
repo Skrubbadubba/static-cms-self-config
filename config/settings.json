@@ -1,0 +1,14 @@
+{
+    "backend":{
+        "name":"github"
+    },
+    "local_backend":true,
+    "display_url":"http://localhost:3000",
+    "media_folder":"/public",
+    "public_folder":"/",
+    "locale":"en",
+    "slug":{
+        "encoding":"ascii",
+        "clean_accents":true
+    }
+}

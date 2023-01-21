@@ -1,0 +1,44 @@
+{
+  "editor": {
+    "preview": false,
+    "frame": false
+  },
+  "create": true,
+  "delete": true,
+  "hide": false,
+  "folder": "src/posts",
+  "name": "posts",
+  "label": "Posts",
+  "label_singular": "post",
+  "slug": "{{slug}}",
+  "description": "This collection was created using the \"Collections\" collection!",
+  "fields": [
+    {
+      "widget": "string",
+      "required": true,
+      "name": "title",
+      "label": "Title"
+    },
+    {
+      "widget": "image",
+      "required": true,
+      "media_library": {
+        "allow_multiple": true,
+        "choose_url": true
+      },
+      "name": "image",
+      "label": "Featured image"
+    },
+    {
+      "widget": "markdown",
+      "required": true,
+      "media_library": {
+        "allow_multiple": true,
+        "choose_url": true
+      },
+      "name": "body",
+      "label": "Body",
+      "hint": "Write your super interesting post here"
+    }
+  ]
+}

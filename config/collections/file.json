@@ -1,0 +1,66 @@
+{
+  "files": [
+    {
+      "editor": {
+        "preview": true,
+        "frame": false
+      },
+      "hide": false,
+      "file": "src/file2.md",
+      "name": "file2",
+      "label": "The other file",
+      "fields": [
+        {
+          "widget": "string",
+          "required": true,
+          "name": "title"
+        }
+      ]
+    },
+    {
+      "editor": {
+        "preview": false,
+        "frame": false
+      },
+      "hide": false,
+      "file": "src/thefile.md",
+      "name": "file",
+      "label": "The file",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "widget": "string",
+          "required": true,
+          "name": "title"
+        }
+      ],
+      "sortable_fields": {
+        "fields": [
+          "stop"
+        ],
+        "default": {
+          "field": "stop",
+          "direction": "none"
+        }
+      }
+    }
+  ],
+  "editor": {
+    "preview": true,
+    "frame": false
+  },
+  "create": false,
+  "delete": true,
+  "hide": false,
+  "name": "file",
+  "label": "The file collection",
+  "sortable_fields": {
+    "default": {
+      "field": "stopppp",
+      "direction": "none"
+    },
+    "fields": [
+      "ffs"
+    ]
+  }
+}
