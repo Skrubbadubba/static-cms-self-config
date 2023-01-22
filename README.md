@@ -1,6 +1,6 @@
 # Static-CMS Self Configuration
 
-This is an example of how to make collections for [Static-CMS](https://github.com/StaticJsCMS/static-cms) (successor of [Netlify-CMS]), that can edit the configuration options of the CMS. For now, this only works for projects using vite.
+This is an example of how to make collections for [Static-CMS](https://github.com/StaticJsCMS/static-cms) (successor of [Netlify-CMS](https://github.com/netlify/netlify-cms)), that can edit the configuration options of the CMS. For now, this only works for projects using vite.
 
 I came up with this idea partly because I wanted to contribute to the project, and since I'm not really a developer (but probably will be in the future), something of this caliber is about the best I can do. This is also to show how much power and customizability Static-CMS already have in terms of editing data, and that it's already at point where improving UI (and growing it's community) is more worthile than expanding it's already powerful toolkit.
 
