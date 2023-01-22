@@ -10,7 +10,7 @@ Even if this is totally useless functionality to you, it provides a good templat
 
 To get a feel for how things work, I suggest you clone this repo and try it out by running `npm i && npm run dev`. Then open a new terminal and run `npx @staticcms/proxy-server`.
 
-If you just want to use it and don't need to mess around, this zip file contains the `config` folder. 
+If you just want to use it and don't need to mess around, [this zip file](https://github.com/Skrubbadubba/static-cms-self-config/files/10475225/config.zip) contains the `config` folder. 
 
 Inside the `config` folder there is a module (`config/config.js`). Import it, and pass it to `CMS.init({ config })`. Make sure that it will be bundled.
 
