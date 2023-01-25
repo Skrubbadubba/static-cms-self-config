@@ -14,7 +14,7 @@ const collection = {
   {
     name: "folder",
     widget: "string",
-    required: false
+    required: true
   },
   ...commonOptions,
   {
@@ -31,14 +31,17 @@ const collection = {
     name: "filter",
     widget: "object",
     collapsed: true,
+    required: false,
     fields: [
       {
         name: "field",
-        widget: "string"
+        widget: "string",
+        required: false
       },
       {
         name: "value",
-        widget: "string"
+        widget: "string",
+        required: false
       }
     ],
     required: false
@@ -50,7 +53,8 @@ const collection = {
     add_to_top: false,
     type_key: "widget",
     types: widgets,
-    required: true
+    required: true,
+    collapsed: true
   }
   ]
 }
