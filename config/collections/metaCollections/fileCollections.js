@@ -12,6 +12,7 @@ const collection = {
         {
             name: "files",
             widget: "list",
+            required: true,
             fields: [
                 {
                     name: "file",

@@ -50,7 +50,7 @@ const collection = {
     add_to_top: false,
     type_key: "widget",
     types: widgets,
-    required: false
+    required: true
   }
   ]
 }
