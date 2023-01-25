@@ -8,6 +8,9 @@ const collection = {
     extension: "json",
     create: true,
     folder: "config/collections/file",
+    editor: {
+        preview: false
+    },
     fields: [
         {
             name: "files",

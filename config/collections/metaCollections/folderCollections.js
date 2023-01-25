@@ -10,6 +10,9 @@ const collection = {
   identifier_field: "name",
   summary: "{{label}}",
   folder: "config/collections/folder",
+  editor: {
+    preview: false
+  },
   fields: [
   {
     name: "folder",

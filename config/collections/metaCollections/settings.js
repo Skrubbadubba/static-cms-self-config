@@ -1,6 +1,9 @@
 const meta = {
     name: "settings",
     label: "Settings",
+    editor: {
+      preview: false
+    },
     files: [
       {
         name: "settings",
