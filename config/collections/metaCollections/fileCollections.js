@@ -31,7 +31,7 @@ const collection = {
                     summary: "{{types.fields.name}}",
                     types: widgets,
                     required: false,
-                    collapes: false
+                    collapsed: false
                 }
             ]
         },
