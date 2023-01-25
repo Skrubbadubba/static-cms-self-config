@@ -137,7 +137,7 @@ const fields = [
         },
         {
           name: "field",
-          widget: "author"
+          widget: "string"
         },
         {
           name: "pattern",
@@ -158,7 +158,7 @@ const fields = [
         },
         {
           name: "field",
-          widget: "author"
+          widget: "string"
         },
         {
           name: "pattern",
