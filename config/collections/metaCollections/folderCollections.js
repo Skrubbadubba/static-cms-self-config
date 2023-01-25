@@ -57,7 +57,7 @@ const collection = {
     type_key: "widget",
     types: widgets,
     required: true,
-    collapsed: true
+    collapsed: false
   }
   ]
 }

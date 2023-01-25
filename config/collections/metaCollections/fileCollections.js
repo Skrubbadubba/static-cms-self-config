@@ -26,11 +26,12 @@ const collection = {
                     name: "fields",
                     label_singular: "field",
                     widget: "list",
-                    add_to_top: false,
+                    add_to_top: true,
                     type_key: "widget",
                     summary: "{{types.fields.name}}",
                     types: widgets,
-                    required: false
+                    required: false,
+                    collapes: false
                 }
             ]
         },

@@ -92,7 +92,7 @@ const fields = [
     {
       name: "sortable_fields",
       widget: "object",
-      collapsed: false,
+      collapsed: true,
       fields: [
         {
           name: "fields",
@@ -133,7 +133,7 @@ const fields = [
     {
       name: "view_filters",
       widget: "list",
-      collapsed: false,
+      collapsed: true,
       fields: [
         {
           name: "label",
@@ -157,7 +157,7 @@ const fields = [
       name: "view_groups",
       widget: "list",
       required: false,
-      collapsed: false,
+      collapsed: true,
       fields: [
         {
           name: "label",
