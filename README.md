@@ -10,17 +10,31 @@ Even if this is totally useless functionality to you, it provides a good templat
 
 To get a feel for how things work, I suggest you clone this repo and try it out by running `npm i && npm run dev`. Then open a new terminal and run `npx @staticcms/proxy-server`.
 
-If you just want to use it and don't need to mess around, download the repo as zip, and extract the config folder. 
+If you just want to use it and don't need to mess around, download the repo as zip, and extract the config folder. Copy the folder into your project.
 
 Inside the `config` folder there is a module (`config/config.js`). Import it, and pass it to `CMS.init({ config })`. Make sure that it will be bundled.
 
-Inside `config/collections/metaCollection/`, there are two files, `collections.js` and `settings.js` representing the collections used for configuring. Inside them you will have to change the _folder_ and _file_ fields to the path to `config/collections/` and `config/settings.json` respectively, relative to your projects repository. The collections should now appear in the UI.
+Inside `config/collections/metaCollection/`, there are two files, `collections.js` and `settings.js` representing the collections used for configuring. Inside them you will have to change the _folder_ and _file_ fields to the path to `config/collections/` and `config/settings.json` respectively, relative to your projects repository. This is most easily done by mutating the object properties before passing it to `CMS.init()`.
+
+`admin/index.html`
+```js
+import config from './config/config.js'
+config.collections.file_collections.folder = "src/cms/config/collections/file" //use your own path here
+config.collections.folder_collections.folder = "src/cms/config/collections/folder" //use your own path here
+console.log(config)
+window.CMS.init({config});
+```
+
+The collections should now appear in the UI.
 
 The **Settings** collection is quite straight forward. It contains all the settings for the apps configuration options, _besides_ the `collections` list.
 
-The **Collections** collection is perhaps less predictable. It it used to create and edit both file and folder collections. This means, if you want to create a file collection, you have to leave the `fields` list widget (2nd from the bottom) empty, while populating the `files` list widget, and vice versa for folder collections. There is currently a bug, that makes objects widgets (and some list widgets) required.
+The **Folder collections** collection is used to create and edit folder collections. 
 
-There is another problem, which might not be a bug. If the `files` list widget is left empty when publishing an entry, the created file for that entry will contain a field `files`, that is an empty list. This means that that collection will be invalid, and you would have to remove that field manually. If this is indeed expected behaviour, I will probably split the **Collections** collection into **File collections** and **Folder collections**.
+The **File collections** is used to create and edit file collections. Each entry is a separate file collectino, which contains a list of files.
+
+There is currently some weird behaviour, that makes objects widgets (and some list widgets) required. This is not a bug, however it is an opened issue labeled "enchancement", so it eventually be fixed. In the meantime, the fields of the affected objetcs all have to be marked as optional. The objects include "view_groups" and "view_filters". Consult the docs regarding which of their fields are required for their usage.
+
 
 ## Converting from yaml to js/json
 
